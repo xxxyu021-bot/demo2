@@ -45,3 +45,20 @@
 
 训练采用 **AdamW** 优化器，并使用带 Warmup 的线性学习率调度策略；模型根据验证集 **F1** 保存最佳权重，并采用 Early Stopping 防止过拟合。
 ## 实验结果
+1. bert‑base‑chinese + MSRA验证集曲线
+   <img width="2052" height="1044" alt="image" src="https://github.com/user-attachments/assets/bd58f0f4-3ef8-4327-b794-b65534f89cb7" />
+
+2.chinese‑bert‑wwm + MSRA验证集曲线
+<img width="2043" height="984" alt="image" src="https://github.com/user-attachments/assets/89776af0-5a32-42d0-8f94-f03380873705" />
+3.bert‑base‑chinese + weibo验证集曲线
+<img width="2025" height="956" alt="image" src="https://github.com/user-attachments/assets/807cd685-cfe2-492e-9b2c-a0eb8914ec48" />
+4.chinese‑bert‑wwm + weibo验证集曲线
+<img width="2010" height="963" alt="image" src="https://github.com/user-attachments/assets/92bdef45-81c3-4dbb-9c73-99e2ecbd2576" />
+## 实验运行
+| 实验 | 运行命令 |
+|---|---|
+| MSRA + bert-base-chinese | `python train.py --config config/msra_bert.json` |
+| MSRA + chinese-bert-wwm | `python train.py --config config/msra_wwm.json` |
+| Weibo + bert-base-chinese | `python train.py --config config/weibo_bert.json` |
+| Weibo + chinese-bert-wwm | `python train.py --config config/weibo_wwm.json` |
+
