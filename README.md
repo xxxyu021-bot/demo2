@@ -33,8 +33,9 @@
 ├── model.py
 ├── train.py
 └── utils.py
-## 超参数设置
 ```
+## 超参数设置
+
 
 | 实验 | 数据集 | 预训练模型 | Batch Size | Epochs | 学习率 | 最大序列长度 | Dropout | Weight Decay | Warmup Ratio | Early Stopping | Seed |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
